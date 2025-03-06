@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #ddd;
+    }
+  </style>
+  <script>
+    // FUNCTIONS: to reuse code; PARAMETER: variable
+    function printHello( name ) {
+      // CONCAT
+      console.log("Hello and welcome to the team: " + name);
+      // console.log("Goodbye People");
+      // console.log("-------------");
+    }
+
+    // printHello( "Leo" ); // console.log("Hello World!");
+    // printHello( "Amy" ); // console.log("Hello World!");
+    // printHello( "Ross" ); // console.log("Hello World!");
+    
+    // a and b are placeholders
+    function addNumbers(numbOne, numbTwo) {
+      console.log(numbOne + numbTwo);
+    }
+
+    // TWO MORE TIMES WITH DIFFERENT NUMBERS
+    addNumbers(1, 2); // 3
+    // addNumbers(3, 2); // 5
+    // addNumbers(10, 2); // 12
+    // console.log('--------------')
+    // CREATE ONE MORE FUNCTION THAT DIVIDES;
+    // USE IT 3 TIMES
+    function divideNumbers(a, b) {
+      console.log(a / b)
+    }
+
+    // divideNumbers(10, 2) // 5
+    // divideNumbers(9, 3) // 3
+    // divideNumbers(100, 10) // 10
+
+    // IF DONE EARLY, DO ONE FOR SUBTRACT AND MULTIPLY
+
+    // SCOPE: { }
+    // if (condition) { }
+    // for (let i = 0; i < array.length; i++) { }
+    // function name(params) { }
+    const globalVar = "world" // can go in
+
+    function scopeTest() {
+      // if created inside {}, cant go out
+      let insideVar = "hello";
+
+      // console.log(globalVar);
+    }
+    scopeTest();
+
+    function outerFunction() {
+      let outerVar = "I am inside outerFunction function."
+
+      function innerFunction() {
+        console.log(outerVar);
+      }
+
+      innerFunction();
+      
+    }
+
+    outerFunction() //
+
+    // CREATE A VAR CALLED PASSWORD AND STORE A SIMPLE PASSWORD
+    // CREATE A FUNCTION CALLED CHECK PASSWORD
+
+    // ASK THE USER TO ENTER A PASSWORD; !hint prompt
+    // STORE IN VARIABLE
+
+    // IF PASSWORD IS CORRECT THE
+    //  LOG: "CORRECT PASSWORD"
+    // ELSE LOG: "INCORRECT PASSWORD"
+    // !!!! CALL THE FUNCTION; !hint functionName();
+
+    const password = "123";
+
+    function checkPassword() {
+      let userPassword = prompt("what is your password?");
+
+      if (userPassword === password) {
+        // code goes here
+        console.log("correct password");
+      } else {
+        console.log("incorrect password")
+      } 
+    }
+
+    // !!!!!! call function
+    checkPassword();
+
+  </script>
+
+</head>
+
+<body>
+
+  <!-- <h1>hello world</h1> -->
+
+</body>
+
+</html>

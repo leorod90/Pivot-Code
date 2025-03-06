@@ -1,0 +1,86 @@
+body {
+  background-color: antiquewhite;
+  font-family: sans-serif;
+  /* padding: 0; */
+  margin: 0;
+}
+
+#nav-bar {
+  background-color: gray;
+  color: white;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center; /* vertical */
+  justify-content: space-between; /* horizontal */
+}
+
+.a-text {
+  text-decoration:none;
+  color: white;
+  padding-left: 10px; 
+  margin-left: 10px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+#container {
+  display: flex;
+  height: 800px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px gray;
+  transition: all 1s;
+}
+/* CHANGE HEIGHT AND WIDTH */
+.card:hover {
+  width: 320px; 
+  height: 320px;
+}
+
+#profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#description{
+  color: gray;
+}
+
+#button {
+  background-color: blue;
+  color: white;
+}
+
+#footer {
+  background-color: navy;
+  color:white;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+
+#grid-container {
+  margin: auto;
+  width: 700px;
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 3 equal columns */
+}

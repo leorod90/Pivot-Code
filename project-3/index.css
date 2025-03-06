@@ -1,0 +1,123 @@
+body {
+  background-color: azure;
+}
+
+.nav-bar {
+  background-color: brown;
+  padding: 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.white-text {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.white-text:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.card {
+  background-color: white;
+  width: 100%;
+  /* NOT AS IMPORTANT */
+  margin-top: 20px;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 20px gray; 
+  -webkit-box-shadow: 39px 87px 90px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 39px 87px 90px -1px rgba(0,0,0,0.75);
+box-shadow: 39px 87px 90px -1px rgba(0,0,0,0.75);
+}
+
+.card-scale {
+  transition: all 2s;
+}
+
+.card-scale:hover {
+  transform: scale(1.25);
+  opacity: .25
+}
+
+.class-translate {
+  transition: all 2s;
+}
+
+.class-translate:hover {
+  /* transform: translateY(20px); */
+  /* transform: translateX(20px); */
+  transform: translate(20px, 200px);
+  opacity: .25
+}
+
+.card-rotate {
+  transition: all 2s;
+}
+
+.card-rotate:hover {
+  transform: rotate(0deg) skew(180deg);
+}
+
+.custom-animation:hover {
+  /* animation: customAnimation 2s; */
+  animation: example 2s;
+}
+
+@keyframes customAnimation {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+/* 2sec,
+
+0sec, .5sec, 1sec, 2sec  */
+@keyframes example {
+  0%   {
+    background-color: red;
+  }
+  25%  {
+    background-color: yellow;
+    transform: translateY(50px);
+  }
+  50%  {
+    background-color: blue;
+    transform: translateY(0px);
+  }
+  100% {
+    background-color: green;
+    transform: translateY(50px);
+  }
+}
+
+
+/* MEDIA QUERY == WEB VERSION*/
+/* 720px - 1080px */
+
+@media screen and (min-width: 720px) {
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 500px;
+    margin: 20px;
+  }
+  .white-text{
+    font-size: 32px;
+  }
+}
