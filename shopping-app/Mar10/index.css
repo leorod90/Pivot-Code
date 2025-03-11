@@ -1,3 +1,8 @@
 body {
   background-color: #f9f1f1;
 }
+/* create a class called item-width */
+/* give it 300px width */
+.item-width {
+  width: 290px;
+}

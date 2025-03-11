@@ -33,8 +33,9 @@ function onLoadFunction() {
 
     // create a div in js and call card div
     const cardDiv = document.createElement("div");
-    // add a class
+    // add a class card and item-width
     cardDiv.classList.add("card");
+    cardDiv.classList.add("item-width");
 
     cardDiv.append(text);
     productsList.append(cardDiv);
