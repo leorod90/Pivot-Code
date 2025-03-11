@@ -45,4 +45,3 @@ function onLoadFunction() {
 
 // window.onload = onLoad;
 window.addEventListener("load", onLoadFunction);
-
