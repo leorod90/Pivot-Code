@@ -26,13 +26,9 @@ function onLoadFunction() {
   // console.log(fakeProducts);
   // loop through your data
   for (let i = 0; i < fakeProducts.length; i++) {
-
     const text = document.createElement("p");
-
     text.textContent = fakeProducts[i].name;
-
     productsList.append(text);
-
   }
 
 }
