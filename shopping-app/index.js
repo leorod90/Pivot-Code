@@ -21,7 +21,20 @@ const fakeProducts = [
 // create a function called onLoad
 // console log fake products
 function onLoadFunction() {
-  console.log(fakeProducts);
+  // get product list is
+  const productsList = document.getElementById("products-list");
+  // console.log(fakeProducts);
+  // loop through your data
+  for (let i = 0; i < fakeProducts.length; i++) {
+
+    const text = document.createElement("p");
+
+    text.textContent = fakeProducts[i].name;
+
+    productsList.append(text);
+
+  }
+
 }
 
 // window.onload = onLoad;
