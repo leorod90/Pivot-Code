@@ -44,6 +44,7 @@ function addTask() {
 
   // append the btn to newLi; has to be on top
   // PARENT ADD CHILD
+  // APPEND MEANS TO ADD INSIDE ANOTHER ELEMENT
   newLi.appendChild(deleteBtn);
   taskList.appendChild(newLi);
 
