@@ -26,12 +26,23 @@ function onLoadFunction() {
   // console.log(fakeProducts);
   // loop through your data
   for (let i = 0; i < fakeProducts.length; i++) {
+    // test
     const text = document.createElement("p");
     text.textContent = fakeProducts[i].name;
-    productsList.append(text);
+    // productsList.append(text);
+
+    // create a div in js and call card div
+    const cardDiv = document.createElement("div");
+    // add a class card and item-width
+    cardDiv.classList.add("card");
+    cardDiv.classList.add("item-width");
+
+    cardDiv.append(text);
+    productsList.append(cardDiv);
   }
 
 }
 
 // window.onload = onLoad;
 window.addEventListener("load", onLoadFunction);
+
