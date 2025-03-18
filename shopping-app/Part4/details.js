@@ -13,6 +13,7 @@ function onLoadFunction() {
   // change the image src
   const image =  document.getElementById("details-image");
   image.src = item.image;
+  // !hint .textContent
   // change details-name to name
   // change details-description to description
   // change details-price to price
