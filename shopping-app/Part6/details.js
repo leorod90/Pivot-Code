@@ -36,8 +36,16 @@ function onLoadFunction() {
 
   function addToCart() {
     //                   key(nickname)  value
-    localStorage.setItem("cart", JSON.stringify(item));
+    localStorage.setItem("myCat", "Tom");
+    // create set item the key should be called myName
+    // the value is (put you first name)
     alert("added to cart: testin");
+    
+    // IGNORE BELOW
+    
+
+    localStorage.setItem('cart', JSON.stringify(item));
+
   }
 
   const btnHTML = document.getElementById("details-button");
