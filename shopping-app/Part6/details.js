@@ -11,7 +11,7 @@ function onLoadFunction() {
 
   // get image and store in var called image
   // change the image src
-  const imageHTML =  document.getElementById("details-image");
+  const imageHTML = document.getElementById("details-image");
   imageHTML.src = item.image;
   // !hint .textContent
   // change details-name to name
@@ -21,7 +21,7 @@ function onLoadFunction() {
   // change details-description to description
   const descriptionHTML = document.getElementById("details-description");
   descriptionHTML.textContent = item.description;
-  
+
   // change details-price to price
   const priceHTML = document.getElementById("details-price");
   priceHTML.textContent = "$" + item.price;
@@ -35,16 +35,10 @@ function onLoadFunction() {
   // make it alert hi, when add to cart btn we get 
 
   function addToCart() {
-    //                   key(nickname)  value
-    localStorage.setItem("myCat", "Tom");
-    // create set item the key should be called myName
-    // the value is (put you first name)
-    alert("added to cart: testin");
-    
-    // IGNORE BELOW
-    
-
+                                   // turns to string
     localStorage.setItem('cart', JSON.stringify(item));
+
+    alert("added to cart: testin");
 
   }
 

@@ -1,0 +1,30 @@
+#cart-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+#cart-items {
+  height: 100px;
+  flex: 1;
+  /* fill remaining space  */
+  /* width: 70%; */
+  display: flex;
+  flex-direction: row;
+  -webkit-box-shadow: 10px 10px 62px -29px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 62px -29px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 62px -29px rgba(0, 0, 0, 0.75);
+}
+
+#checkout {
+  height: 100%;
+  width: 250px;
+  background-color: red;
+  height: 100%;
+  /* width: 30%; */
+}
+
+.cart-img {
+  height: 100px;
+  width: 100px;
+}
